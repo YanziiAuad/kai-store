@@ -1,0 +1,279 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Kai Store</title>
+  <meta name="description" content="iPhones, Samsung Galaxy and every phone in between — plus expert repairs. Kai Store, since 2021." />
+  <meta name="theme-color" content="#0A0A0B" />
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;600;700;800&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/src/style.css" />
+</head>
+<body class="is-loading">
+  <a class="skip" href="#main">Skip to content</a>
+
+  <!-- ───────── Loader ───────── -->
+  <div class="loader" aria-hidden="true">
+    <svg class="loader-phone" viewBox="0 0 120 240" fill="none">
+      <rect class="lp-body" x="4" y="4" width="112" height="232" rx="24" stroke="currentColor" stroke-width="3" />
+      <rect class="lp-island" x="44" y="18" width="32" height="9" rx="4.5" stroke="currentColor" stroke-width="2" />
+      <path class="lp-bar" d="M42 220h36" stroke="currentColor" stroke-width="3" stroke-linecap="round" />
+    </svg>
+    <div class="loader-word"><span class="loader-text">Kai.</span></div>
+    <div class="loader-meta">
+      <span>Phones &amp; repairs</span>
+      <span class="loader-count">000</span>
+    </div>
+  </div>
+
+  <!-- ───────── Cursor ───────── -->
+  <div class="cursor" aria-hidden="true">
+    <div class="cursor-ring"><span class="cursor-label"></span></div>
+    <div class="cursor-dot"></div>
+  </div>
+
+  <!-- ───────── Header ───────── -->
+  <header class="header">
+    <a class="logo" href="#top" aria-label="Kai Store home">
+      <svg width="18" height="30" viewBox="0 0 22 36" fill="none" aria-hidden="true"><rect x="1.5" y="1.5" width="19" height="33" rx="5" stroke="currentColor" stroke-width="2.5"/><rect x="7" y="5" width="8" height="2.5" rx="1.25" fill="currentColor"/></svg>
+      <span>Kai.</span>
+    </a>
+    <nav class="nav" aria-label="Primary">
+      <a href="#shop" class="roll"><span data-text="Shop">Shop</span></a>
+      <a href="#repairs" class="roll"><span data-text="Repairs">Repairs</span></a>
+      <a href="#support" class="roll"><span data-text="Support">Support</span></a>
+    </nav>
+    <button class="bag-btn magnetic" type="button" aria-label="Open bag">
+      <span>Bag</span><span class="bag-count" aria-live="polite">0</span>
+    </button>
+  </header>
+
+  <main id="main">
+    <!-- ───────── Hero ───────── -->
+    <section class="hero" id="top">
+      <svg class="hero-orbits" viewBox="0 0 1000 1000" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+        <path id="orbit-b" class="orbit orbit-dash" d="M260 500a240 330 0 1 0 480 0a240 330 0 1 0-480 0" />
+        <g transform="rotate(-16 500 500)">
+          <path id="orbit-a" class="orbit" d="M140 500a360 210 0 1 0 720 0a360 210 0 1 0-720 0" />
+          <circle class="orbit-dot" r="6" cx="0" cy="0" />
+        </g>
+      </svg>
+
+      <div class="hero-stage" aria-hidden="true">
+        <div class="float f1" data-depth="0.5"><div class="float-in"><img src="img/s24u-dark.jpg" alt="" /></div></div>
+        <div class="float f2" data-depth="1.1"><div class="float-in"><img src="img/iphone14pro-purple.jpg" alt="" /></div></div>
+        <div class="float f3" data-depth="1.6"><div class="float-in"><img src="img/galaxy-s23-ultra.png" alt="" /></div></div>
+        <div class="float f4" data-depth="0.8"><div class="float-in"><img src="img/iphone14pro-blue.jpg" alt="" /></div></div>
+      </div>
+
+      <div class="hero-copy">
+        <p class="eyebrow hero-eyebrow"><span class="dot"></span>Since 2021 · Five years of phones &amp; repairs</p>
+        <h1 class="hero-title">
+          <span class="line">Every phone.</span>
+          <span class="line">One store</span>
+          <span class="line">you <em>trust.</em></span>
+        </h1>
+        <div class="hero-foot">
+          <p class="hero-sub">New &amp; certified iPhones, Samsung Galaxy and every brand in between — sold and fixed by the same people.</p>
+          <div class="hero-ctas">
+            <a href="#shop" class="btn btn-accent magnetic" data-cursor="Shop"><span>Shop phones</span>
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+            <a href="#support" class="btn btn-ghost magnetic"><span>Get support</span></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="scroll-cue" aria-hidden="true"><span>Scroll</span><i></i></div>
+    </section>
+
+    <!-- ───────── Marquee ───────── -->
+    <div class="marquee" aria-label="Brands we stock">
+      <div class="marquee-track">
+        <span>Apple</span><b>✦</b><span>Samsung</span><b>✦</b><span>Google Pixel</span><b>✦</b><span>OnePlus</span><b>✦</b><span>Xiaomi</span><b>✦</b><span>Oppo</span><b>✦</b>
+        <span aria-hidden="true">Apple</span><b>✦</b><span aria-hidden="true">Samsung</span><b>✦</b><span aria-hidden="true">Google Pixel</span><b>✦</b><span aria-hidden="true">OnePlus</span><b>✦</b><span aria-hidden="true">Xiaomi</span><b>✦</b><span aria-hidden="true">Oppo</span><b>✦</b>
+      </div>
+    </div>
+
+    <!-- ───────── Statement ───────── -->
+    <section class="statement" id="story">
+      <div class="statement-meta">
+        <div class="years"><span class="years-num">0</span><span class="years-unit">years</span></div>
+        <svg class="years-ring" viewBox="0 0 120 120" aria-hidden="true"><circle cx="60" cy="60" r="54" /></svg>
+      </div>
+      <p class="statement-text">Kai began at a repair bench. Five years on, we sell and fix iPhones, Samsungs and every phone in between — and the people who sell you a phone are the same people who fix it.</p>
+    </section>
+
+    <!-- ───────── Lineup (pinned horizontal) ───────── -->
+    <section class="lineup" aria-label="The lineup">
+      <div class="lineup-sticky">
+        <div class="lineup-head">
+          <p class="eyebrow">The lineup</p>
+          <div class="lineup-progress"><i></i></div>
+        </div>
+        <div class="lineup-track">
+          <figure class="panel panel-wide"><div class="panel-img"><img src="img/s24u-back.jpg" alt="Samsung Galaxy S24 Ultra camera array in low light" loading="lazy" /></div><figcaption><span>01</span>Galaxy S24 Ultra</figcaption></figure>
+          <figure class="panel"><div class="panel-img"><img src="img/iphone-lineup.jpg" alt="Four iPhone 15 Pro models side by side" loading="lazy" /></div><figcaption><span>02</span>iPhone 15 Pro</figcaption></figure>
+          <figure class="panel panel-tall"><div class="panel-img"><img src="img/iphone15promax-front.jpg" alt="Front of an iPhone 15 Pro Max" loading="lazy" /></div><figcaption><span>03</span>iPhone 15 Pro Max</figcaption></figure>
+          <figure class="panel panel-wide"><div class="panel-img"><img src="img/s24u-pen.jpg" alt="Galaxy S24 Ultra with S Pen on grey" loading="lazy" /></div><figcaption><span>04</span>S Pen, built in</figcaption></figure>
+          <figure class="panel"><div class="panel-img"><img src="img/zflip3.jpg" alt="Galaxy Z Flip3 folded and open" loading="lazy" /></div><figcaption><span>05</span>Galaxy Z Flip</figcaption></figure>
+          <a class="panel panel-end" href="#shop" data-cursor="Shop">
+            <span class="panel-end-title">See everything<br/>in store</span>
+            <svg viewBox="0 0 24 24" width="48" height="48" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ───────── Shop ───────── -->
+    <section class="shop" id="shop">
+      <div class="section-head">
+        <p class="eyebrow">Shop</p>
+        <h2 class="split-title">In store right now.</h2>
+      </div>
+      <div class="filters" role="group" aria-label="Filter phones">
+        <button type="button" class="chip is-active" data-filter="all" aria-pressed="true">All</button>
+        <button type="button" class="chip" data-filter="apple" aria-pressed="false">iPhone</button>
+        <button type="button" class="chip" data-filter="samsung" aria-pressed="false">Samsung</button>
+        <button type="button" class="chip" data-filter="pre-owned" aria-pressed="false">Pre-owned</button>
+      </div>
+      <div class="grid" id="grid"></div>
+      <a class="other-brands" href="#support" data-topic="order" data-cursor="Ask">
+        <span>Looking for Pixel, OnePlus, Xiaomi or something else?</span>
+        <strong>Ask the team →</strong>
+      </a>
+    </section>
+
+    <!-- ───────── Repairs ───────── -->
+    <section class="repairs" id="repairs">
+      <div class="section-head">
+        <p class="eyebrow">Kai Repairs</p>
+        <h2 class="split-title">Cracked it?<br/>We’ll fix it.</h2>
+      </div>
+      <ul class="repair-list" id="repair-list"></ul>
+      <a href="#support" class="btn btn-light magnetic" data-topic="repair"><span>Book a repair</span></a>
+    </section>
+
+    <!-- ───────── Support ───────── -->
+    <section class="support" id="support">
+      <div class="section-head">
+        <p class="eyebrow">Support</p>
+        <h2 class="split-title">Talk to a real person.</h2>
+      </div>
+      <div class="support-grid">
+        <ul class="channels">
+          <li><a class="channel" id="ch-whatsapp" href="#" target="_blank" rel="noopener"><span>WhatsApp</span><em>Fastest reply</em></a></li>
+          <li><a class="channel" id="ch-phone" href="#"><span>Call</span><em data-store="phone"></em></a></li>
+          <li><a class="channel" id="ch-email" href="#"><span>Email</span><em data-store="email"></em></a></li>
+          <li><div class="channel"><span>Visit</span><em data-store="address"></em></div></li>
+        </ul>
+        <form class="support-form" id="support-form" novalidate>
+          <fieldset class="topics">
+            <legend>What’s it about?</legend>
+            <label class="chip"><input type="radio" name="topic" value="order" checked /><span>Order</span></label>
+            <label class="chip"><input type="radio" name="topic" value="repair" /><span>Repair</span></label>
+            <label class="chip"><input type="radio" name="topic" value="warranty" /><span>Warranty</span></label>
+            <label class="chip"><input type="radio" name="topic" value="other" /><span>Other</span></label>
+          </fieldset>
+          <div class="field-row">
+            <label class="field"><span>Name</span><input name="name" type="text" autocomplete="name" required /></label>
+            <label class="field"><span>Phone / WhatsApp</span><input name="phone" type="tel" autocomplete="tel" required /></label>
+          </div>
+          <label class="field repair-only"><span>Phone model</span><input name="model" type="text" placeholder="e.g. iPhone 13" /></label>
+          <label class="field"><span>Message</span><textarea name="message" rows="4" required></textarea></label>
+          <button class="btn btn-accent submit magnetic" type="submit">
+            <span class="submit-label">Send message</span>
+            <svg class="submit-icon" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </button>
+          <p class="form-status" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- ───────── Footer ───────── -->
+  <footer class="footer">
+    <div class="footer-cols">
+      <div><p class="eyebrow">Visit</p><p data-store="address"></p><p data-store="city"></p></div>
+      <div><p class="eyebrow">Hours</p><dl class="hours" id="hours"></dl></div>
+      <div><p class="eyebrow">Contact</p><p data-store="phone"></p><p data-store="email"></p></div>
+    </div>
+    <div class="footer-word" aria-hidden="true">Kai.</div>
+    <div class="footer-base">
+      <span>© <span id="year"></span> Kai Store</span>
+      <details class="credits"><summary>Photo credits</summary><ul id="credits"></ul></details>
+    </div>
+  </footer>
+
+  <!-- ───────── Product dialog ───────── -->
+  <div class="overlay" id="product-overlay" hidden>
+    <div class="overlay-bg" data-close></div>
+    <div class="product-panel" role="dialog" aria-modal="true" aria-labelledby="pp-name">
+      <button class="close magnetic" type="button" data-close aria-label="Close">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
+      </button>
+      <div class="pp-media"><img id="pp-img" alt="" /></div>
+      <div class="pp-info">
+        <p class="eyebrow" id="pp-brand"></p>
+        <h3 id="pp-name"></h3>
+        <p class="pp-price" id="pp-price"></p>
+        <div class="pp-group"><p class="pp-label">Colour — <span id="pp-color-name"></span></p><div class="swatches" id="pp-colors"></div></div>
+        <div class="pp-group"><p class="pp-label">Storage</p><div class="options" id="pp-storage"></div></div>
+        <div class="pp-actions">
+          <div class="qty"><button type="button" id="qty-dec" aria-label="Decrease quantity">−</button><span id="qty-val">1</span><button type="button" id="qty-inc" aria-label="Increase quantity">+</button></div>
+          <button type="button" class="btn btn-accent add magnetic" id="pp-add">
+            <svg class="add-icon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><path id="add-path" d="M12 5v14M5 12h14"/></svg>
+            <span id="pp-add-label">Add to bag</span>
+          </button>
+        </div>
+        <p class="pp-note">Every phone is tested by our repair team · Warranty included · Delivery or pickup</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ───────── Bag drawer ───────── -->
+  <div class="overlay" id="bag-overlay" hidden>
+    <div class="overlay-bg" data-close></div>
+    <aside class="drawer" role="dialog" aria-modal="true" aria-labelledby="bag-title">
+      <div class="drawer-head">
+        <h3 id="bag-title">Your bag</h3>
+        <button class="close" type="button" data-close aria-label="Close bag">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
+        </button>
+      </div>
+      <div class="drawer-body">
+        <ul class="bag-items" id="bag-items"></ul>
+        <p class="bag-empty" id="bag-empty">Your bag is empty.</p>
+        <form class="checkout" id="checkout" novalidate>
+          <div class="bag-total"><span>Total</span><strong id="bag-total"></strong></div>
+          <fieldset class="topics">
+            <legend>Delivery</legend>
+            <label class="chip"><input type="radio" name="fulfil" value="Delivery" checked /><span>Delivery</span></label>
+            <label class="chip"><input type="radio" name="fulfil" value="Pickup" /><span>Pick up in store</span></label>
+          </fieldset>
+          <label class="field"><span>Name</span><input name="name" type="text" autocomplete="name" required /></label>
+          <label class="field"><span>Phone</span><input name="phone" type="tel" autocomplete="tel" required /></label>
+          <label class="field address-field"><span>Delivery address</span><input name="address" type="text" autocomplete="street-address" /></label>
+          <fieldset class="topics">
+            <legend>Pay with</legend>
+            <label class="chip"><input type="radio" name="pay" value="Card" checked /><span>Card</span></label>
+            <label class="chip"><input type="radio" name="pay" value="Mobile money" /><span>Mobile money</span></label>
+            <label class="chip"><input type="radio" name="pay" value="Cash on delivery / in store" /><span>Cash</span></label>
+          </fieldset>
+          <button class="btn btn-accent submit" type="submit"><span class="submit-label">Place order</span></button>
+          <p class="form-status" role="status" aria-live="polite"></p>
+        </form>
+        <div class="order-done" id="order-done" hidden>
+          <svg viewBox="0 0 80 80" width="80" height="80" fill="none" aria-hidden="true"><circle class="done-ring" cx="40" cy="40" r="36" /><path class="done-check" d="M24 41l11 11 21-24" /></svg>
+          <h4>Order placed.</h4>
+          <p>We’ll confirm availability and payment with you on the number you gave us.</p>
+        </div>
+      </div>
+    </aside>
+  </div>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>

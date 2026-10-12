@@ -1,0 +1,22 @@
+{
+  "name": "kai-store",
+  "version": "1.0.0",
+  "description": "Kai Store — phones & repairs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "animejs": "^4.5.0"
+  },
+  "devDependencies": {
+    "vite": "^6.4.4"
+  }
+}
